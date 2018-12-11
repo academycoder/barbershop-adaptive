@@ -1,0 +1,32 @@
+{
+  "name": "barbershop_adaptive",
+  "version": "1.0.0",
+  "description": "adaptive version of barbershop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/encrypticus/barbershop-adaptive.git"
+  },
+  "keywords": [
+    "mobile",
+    "first",
+    "web",
+    "development",
+    "adaptive"
+  ],
+  "author": "Alexandr Timofeyev (aka encrypticus)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/encrypticus/barbershop-adaptive/issues"
+  },
+  "homepage": "https://github.com/encrypticus/barbershop-adaptive#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.11.0"
+  }
+}
