@@ -1,0 +1,29 @@
+/* Файл variables.less */
+
+$bg-darkgrey: #292929;
+$bg-lightgrey: #f8f5f2;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
+
+
+/* Файл scaffolding.less */
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "Arial", sans-serif;
+  color: #f7f4f1;
+  font-style: normal;
+
+  background-color: $bg-darkgrey;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
