@@ -1,0 +1,73 @@
+.slider__item--reviews,
+.slider__item--advantages {
+  display: none;
+}
+
+.slider__item--reviews-active,
+.slider__item--advantages-active {
+  display: block;
+}
+
+.slider__toggles {
+  margin: 0;
+  text-align: center;
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 5px;
+}
+
+.slider__toggle {
+  width: 8px;
+  height: 8px;
+
+  border: 0;
+  padding: 0;
+
+  margin-right: 23px;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+  cursor: pointer;
+}
+
+.slider__toggle--advantages {
+  background-color:  #292929;
+  border: 2px solid #959595;
+}
+
+.slider__toggle--reviews {
+  background-color: #f8f5f2;
+  border: 2px solid #858483;
+}
+
+.slider__toggle--advantages-active {
+  border-color: #fff;
+  background-color: #fff;
+}
+
+.slider__toggle--reviews-active {
+  border-color: #353535;
+  background-color: #353535;
+}
+
+.slider__toggle:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__item--reviews,
+  .slider__item--advantages {
+    display: block;
+  }
+}

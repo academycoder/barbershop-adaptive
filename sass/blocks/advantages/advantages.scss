@@ -1,0 +1,147 @@
+.advantages {
+  position: relative;
+  background-color: #242424;
+  //padding-bottom: 20px;
+}
+
+.advantages__list {
+  @include reset-list();
+  text-align: center;
+}
+
+.advantages__img {
+  margin-bottom: 23px;
+}
+
+.advantages__title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.advantages__description {
+  margin: 0;
+  font-size: 20px;
+}
+
+.advantages__toggles {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+
+  margin: 0;
+  text-align: center;
+}
+
+.advantages__item {
+  padding-top: 125px;
+  padding-left: 47px;
+  padding-right: 43px;
+  padding-bottom: 51px;
+
+  position: relative;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 95px;
+    margin-left: -47px;
+
+    background-repeat: no-repeat;
+  }
+
+  &--fast::before {
+    height: 94px;
+    background-image: url('/img/advantage-1-illustration.svg');
+  }
+
+  &--cool::before {
+    height: 88px;
+    background-image: url('/img/advantage-2-illustration.svg');
+  }
+
+  &--price::before {
+    height: 91px;
+    background-image: url('/img/advantage-3-illustration.svg');
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    width: 84%;
+    margin: 0 auto;
+  }
+
+  .advantages__item {
+    padding-left: 130px;
+    padding-top: 45px;
+    padding-right: 0;
+    padding-bottom: 37px;
+
+    text-align: left;
+
+    &::before {
+      left: 0;
+      top: 45px;
+      margin-left: 0;
+    }
+
+    &--fast::after,
+    &--cool::after {
+      content: '';
+
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      height: 1px;
+      width: 100%;
+      background-color: #4a4a4a;
+    }
+  }
+
+  .advantages__toggles {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__list {
+    display: flex;
+  }
+
+  .advantages__item {
+    padding-top: 125px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 51px;
+
+    text-align: center;
+
+    &::before {
+      top: 0;
+      left: 50%;
+      margin-left: -47px;
+    }
+
+    &--fast,
+    &--cool {
+      border-right: 1px solid #4a4a4a;
+    }
+
+    &--fast::after,
+    &--cool::after {
+      width: 0;
+      height: 0;
+    }
+  }
+}

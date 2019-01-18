@@ -1,0 +1,74 @@
+.user-list__login {
+  position: relative;
+
+  display: block;
+  padding: 17px 21px;
+  padding-left: 49px;
+
+  line-height: 18px;
+  color: #fff;
+  text-decoration: none;
+
+  background-image: url('/img/login.png');
+  background-repeat: no-repeat;
+  background-position: 20px center;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    width: auto;
+    max-width: 60px;
+  }
+
+  .user-list__login {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+
+    font-size: 0;
+    background-position-y: 29px;
+
+    &:hover {
+      background-image: url('/img/login-tablet-hover.png');
+    }
+
+    &:active {
+      background-image: url('/img/login.png');
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    max-width: 160px;
+  }
+
+  .user-list__login {
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 23px;
+    padding-left: 50px;
+
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      color: #000;
+      background-color: #fff;
+      background-image: url('/img/login-tablet-hover.png');
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: #fff;
+    }
+  }
+}

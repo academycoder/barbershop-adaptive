@@ -1,0 +1,54 @@
+@mixin outline($color: red) {
+  outline: 2px solid $color;
+  outline-offset: -2px;
+}
+
+@mixin reset-list() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin left-top-info($bg: red, $c: #fff) {
+  content: attr(class);
+
+  background-color: $bg;
+  color: $c;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@mixin left-bottom-info($bg: red, $c: white) {
+  content: attr(class);
+
+  background-color: $bg;
+  color: $c;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@mixin right-top-info($bg: red, $c: white) {
+  content: attr(class);
+
+  background-color: $bg;
+  color: $c;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@mixin right-bottom-info($bg: red, $c: white) {
+  content: attr(class);
+
+  background-color: $bg;
+  color: $c;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
